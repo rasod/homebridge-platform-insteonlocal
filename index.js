@@ -457,7 +457,7 @@ InsteonLocalPlatform.prototype.eventListener = function () {
 							foundDevice.lastUpdate = moment()
 						}
 						
-						if (command1 == 11) { //11 = on
+						if (command1 == 11 || command1 == 12) { //11 = on 12 = fast on
 							var level_int = parseInt(command2, 16)*(100/255);
 							var level = Math.ceil(level_int);
 			
@@ -477,7 +477,7 @@ InsteonLocalPlatform.prototype.eventListener = function () {
 							foundDevice.lastUpdate = moment()	
 						}
 						
-						if (command1 == 13) { //13 = off
+						if (command1 == 13 || command1 == 14) { //13 = off 14 = fast off
 							self.log('Got off event for ' + foundDevice.name);
 				
 							if(foundDevice.dimmable){
