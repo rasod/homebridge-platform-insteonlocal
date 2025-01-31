@@ -13,8 +13,8 @@
     "url": "https://github.com/kuestess/homebridge-platform-insteonlocal/issues"
   },
   "engines": {
-    "node": ">=12.13.0",
-    "homebridge": ">=1.3.0"
+    "homebridge": ">=1.8.0 || >=2.0.0",
+    "node": ">=18"
   },
   "main": "dist/index.js",
   "scripts": {
